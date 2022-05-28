@@ -1,0 +1,593 @@
+[06:45:23] [ServerMain/INFO]: Environment: authHost='https://authserver.mojang.com', accountsHost='https://api.mojang.com', sessionHost='https://sessionserver.mojang.com', servicesHost='https://api.minecraftservices.com', name='PROD'
+[06:45:39] [Worker-Main-1/INFO]: Loaded 7 recipes
+[06:45:55] [Server thread/INFO]: Starting minecraft server version 1.18.2
+[06:45:55] [Server thread/INFO]: Loading properties
+[06:45:56] [Server thread/INFO]: This server is running Paper version git-Paper-283 (MC: 1.18.2) (Implementing API version 1.18.2-R0.1-SNAPSHOT) (Git: f8e8d6c)
+[06:45:56] [Server thread/INFO]: Server Ping Player Sample Count: 12
+[06:45:56] [Server thread/INFO]: Using 4 threads for Netty based IO
+[06:45:58] [Server thread/INFO]: Default game type: SURVIVAL
+[06:45:58] [Server thread/INFO]: Generating keypair
+[06:46:00] [Server thread/INFO]: Starting Minecraft server on 0.0.0.0:25697
+[06:46:00] [Server thread/INFO]: Using epoll channel type
+[06:46:01] [Server thread/INFO]: Paper: Using libdeflate (Linux x86_64) compression from Velocity.
+[06:46:01] [Server thread/INFO]: Paper: Using OpenSSL 1.1.x (Linux x86_64) cipher from Velocity.
+[06:46:05] [Server thread/INFO]: [CoreProtect] Loading CoreProtect v21.2
+[06:46:05] [Server thread/INFO]: [AppleCoreSpigot] Loading AppleCoreSpigot v1.2.0
+[06:46:05] [Server thread/INFO]: [Skript] Loading Skript v2.6.1
+[06:46:05] [Server thread/INFO]: [SkBee] Loading SkBee v1.15.2
+[06:46:05] [Server thread/INFO]: [floodgate] Loading floodgate v2.1.0-SNAPSHOT
+[06:46:10] [Server thread/WARN]: [floodgate] en_ is not a supported Floodgate language.
+[06:46:10] [Server thread/INFO]: [floodgate] Took 4,677ms to boot Floodgate
+[06:46:10] [Server thread/INFO]: [Geyser-Spigot] Loading Geyser-Spigot v2.0.3-SNAPSHOT
+[06:46:10] [Server thread/INFO]: Server permissions file permissions.yml is empty, ignoring it
+[06:46:10] [Server thread/INFO]: Preparing level "world"
+[06:46:47] [Server thread/INFO]: Preparing start region for dimension minecraft:overworld
+[06:46:51] [Server thread/INFO]: Time elapsed: 4447 ms
+[06:46:51] [Server thread/INFO]: Preparing start region for dimension minecraft:the_nether
+[06:46:54] [Server thread/INFO]: Time elapsed: 2514 ms
+[06:46:54] [Server thread/INFO]: Preparing start region for dimension minecraft:the_end
+[06:46:56] [Server thread/INFO]: Time elapsed: 1580 ms
+[06:46:56] [Server thread/INFO]: [CoreProtect] Enabling CoreProtect v21.2
+[06:47:04] [Server thread/INFO]: [CoreProtect] 已經成功啟用 CoreProtect ！ 
+[06:47:04] [Server thread/INFO]: [CoreProtect] 使用 SQLite 進行資料儲存。
+[06:47:04] [Server thread/INFO]: --------------------
+[06:47:04] [Server thread/INFO]: [CoreProtect] 喜歡 CoreProtect 嗎 ？ 加入我們的 Discord ！
+[06:47:04] [Server thread/INFO]: [CoreProtect] Discord: www.coreprotect.net/discord/
+[06:47:04] [Server thread/INFO]: --------------------
+[06:47:04] [Server thread/INFO]: [AppleCoreSpigot] Enabling AppleCoreSpigot v1.2.0
+[06:47:04] [Server thread/INFO]: [Skript] Enabling Skript v2.6.1
+[06:47:10] [Thread-8/INFO]: [Skript] A new version of Skript is available: 2.6.2 (you're currently running 2.6.1)
+[06:47:10] [Thread-8/INFO]: Download it at: <aqua><u><link:https://github.com/SkriptLang/Skript/releases/download/2.6.2/Skript.jar>https://github.com/SkriptLang/Skript/releases/download/2.6.2/Skript.jar
+[06:48:29] [Server thread/INFO]: [Skript] Loaded 143127 aliases in 75938ms
+[06:48:32] [Server thread/INFO]: [Skript]  ~ created by & © Peter Güttinger aka Njol ~
+[06:48:32] [Server thread/INFO]: [SkBee] Enabling SkBee v1.15.2
+[06:48:33] [Server thread/INFO]: [SkBee] Loading NBTApi...
+[06:48:33] [Server thread/INFO]: [SkBee] [NBTAPI] Found Spigot: v1_18_R2! Trying to find NMS support
+[06:48:33] [Server thread/INFO]: [SkBee] [NBTAPI] NMS support 'MC1_18_R2' loaded!
+[06:48:33] [Server thread/INFO]: [SkBee] [NBTAPI] Found Gson: class com.google.gson.Gson
+[06:48:34] [Server thread/INFO]: [SkBee] Successfully loaded NBTApi!
+[06:48:34] [Server thread/INFO]: [SkBee] NBT Elements successfully loaded
+[06:48:34] [Server thread/INFO]: [SkBee] Recipe Elements successfully loaded
+[06:48:34] [Server thread/INFO]: [SkBee] Scoreboard Elements successfully loaded
+[06:48:34] [Server thread/INFO]: [SkBee] Bound Elements successfully loaded
+[06:48:34] [Server thread/INFO]: [SkBee] Text Component Elements successfully loaded
+[06:48:34] [Server thread/INFO]: [SkBee] Pathfinding Elements successfully loaded
+[06:48:35] [Server thread/INFO]: [SkBee] New Structure Elements successfully loaded
+[06:48:35] [Server thread/INFO]: [SkBee] Old Structure Elements DISABLED!
+[06:48:35] [Server thread/INFO]: [SkBee]  - Old structure system is no longer available on MC 1.18+
+[06:48:35] [Server thread/INFO]: [SkBee]  - Please use new structure system
+[06:48:35] [Server thread/INFO]: [SkBee] Other Elements successfully loaded
+[06:48:35] [Server thread/INFO]: [SkBee] Virtual Furnace Elements disabled via config
+[06:48:35] [Server thread/INFO]: [SkBee] World Creator Elements successfully loaded
+[06:48:35] [Server thread/INFO]: [SkBee] Game Event Elements successfully loaded
+[06:48:35] [Server thread/INFO]: [SkBee] Successfully enabled v1.15.2 in 2.65 seconds
+[06:48:35] [Server thread/INFO]: [floodgate] Enabling floodgate v2.1.0-SNAPSHOT
+[06:48:37] [Server thread/INFO]: [Geyser-Spigot] Enabling Geyser-Spigot v2.0.3-SNAPSHOT
+[06:48:40] [Server thread/INFO]: [Geyser-Spigot] Auto-loaded Floodgate key
+[06:48:40] [Server thread/INFO]: [Geyser-Spigot] ******************************************
+[06:48:40] [Server thread/INFO]: [Geyser-Spigot] 
+[06:48:40] [Server thread/INFO]: [Geyser-Spigot] Loading Geyser version 2.0.3-SNAPSHOT (git-master-f38c1fb)
+[06:48:40] [Server thread/INFO]: [Geyser-Spigot] 
+[06:48:40] [Server thread/INFO]: [Geyser-Spigot] ******************************************
+[06:49:07] [Server thread/INFO]: [Geyser-Spigot] Loaded Floodgate key!
+[06:49:08] [Network Listener - #1/INFO]: [Geyser-Spigot] Started Geyser on 0.0.0.0:19132
+[06:49:08] [Server thread/INFO]: [Geyser-Spigot] Done (27.276s)! Run /geyser help for help!
+[06:49:10] [Server thread/INFO]: Running delayed init tasks
+[06:49:10] [Server thread/INFO]: [Skript] Loading variables...
+[06:49:11] [Server thread/INFO]: [Skript] Loaded 101 variables in 0.5 seconds
+[06:49:14] [Server thread/ERROR]: [Skript] §c§lLine 205:§7 (Server-Core.sk)
+§c    Can't understand this expression: prefix of player
+§6    Line: §7send "{@prefix} [&bStaffChat&f] &7- %prefix of player% %player% &8>> &e%arg-1%" to all players where [input has permission "core.staffchat.see" or "core.*"]
+ §r
+[06:49:18] [Server thread/ERROR]: [Skript] §c§lLine 400:§7 (Server-Core.sk)
+§c    undefined option {@MotdLine9}
+§6    Line: §7send "{@MotdLine9}" to player
+ §r
+[06:49:24] [Server thread/INFO]: > Successfully loaded Core...
+[06:49:28] [Server thread/WARN]: [Skript] §6§lLine 56:§7 (lifesteal.sk)
+§e    Starting a variable's name with an expression is discouraged ({%player's uuid%.ls.hearts}). You could prefix it with the script's name: {lifesteal.%player's uuid%.ls.hearts}
+§6    Line: §7if {%player's uuid%.ls.hearts} >= {ls.heartlimit}:
+ §r
+[06:49:28] [Server thread/WARN]: [Skript] §6§lLine 60:§7 (lifesteal.sk)
+§e    Starting a variable's name with an expression is discouraged ({%player's uuid%.ls.hearts}). You could prefix it with the script's name: {lifesteal.%player's uuid%.ls.hearts}
+§6    Line: §7if {%player's uuid%.ls.hearts} is not set:
+ §r
+[06:49:28] [Server thread/WARN]: [Skript] §6§lLine 61:§7 (lifesteal.sk)
+§e    Starting a variable's name with an expression is discouraged ({%player's uuid%.ls.hearts}). You could prefix it with the script's name: {lifesteal.%player's uuid%.ls.hearts}
+§6    Line: §7set {%player's uuid%.ls.hearts} to 10
+ §r
+[06:49:28] [Server thread/WARN]: [Skript] §6§lLine 62:§7 (lifesteal.sk)
+§e    Starting a variable's name with an expression is discouraged ({%player's uuid%.ls.hearts}). You could prefix it with the script's name: {lifesteal.%player's uuid%.ls.hearts}
+§6    Line: §7add 1 to {%player's uuid%.ls.hearts}
+ §r
+[06:49:28] [Server thread/WARN]: [Skript] §6§lLine 67:§7 (lifesteal.sk)
+§e    Starting a variable's name with an expression is discouraged ({%player's uuid%.ls.hearts}). You could prefix it with the script's name: {lifesteal.%player's uuid%.ls.hearts}
+§6    Line: §7message "&6［飛翔小助手］&b生命值+1，目前生命值為 &c%{%player's uuid%.ls.hearts}%❤！"
+ §r
+[06:49:29] [Server thread/WARN]: [Skript] §6§lLine 128:§7 (lifesteal.sk)
+§e    Starting a variable's name with an expression is discouraged ({%player%.hearts}). You could prefix it with the script's name: {lifesteal.%player%.hearts}
+§6    Line: §7if {%player%.hearts} is set:
+ §r
+[06:49:29] [Server thread/WARN]: [Skript] §6§lLine 129:§7 (lifesteal.sk)
+§e    Starting a variable's name with an expression is discouraged ({%player%.hearts}). You could prefix it with the script's name: {lifesteal.%player%.hearts}
+§6    Line: §7set {%player's uuid%.ls.hearts} to {%player%.hearts}
+ §r
+[06:49:29] [Server thread/WARN]: [Skript] §6§lLine 129:§7 (lifesteal.sk)
+§e    Starting a variable's name with an expression is discouraged ({%player's uuid%.ls.hearts}). You could prefix it with the script's name: {lifesteal.%player's uuid%.ls.hearts}
+§6    Line: §7set {%player's uuid%.ls.hearts} to {%player%.hearts}
+ §r
+[06:49:29] [Server thread/WARN]: [Skript] §6§lLine 130:§7 (lifesteal.sk)
+§e    Starting a variable's name with an expression is discouraged ({%player%.hearts}). You could prefix it with the script's name: {lifesteal.%player%.hearts}
+§6    Line: §7delete {%player%.hearts}
+ §r
+[06:49:29] [Server thread/WARN]: [Skript] §6§lLine 140:§7 (lifesteal.sk)
+§e    Starting a variable's name with an expression is discouraged ({%victim's uuid%.ls.hearts}). You could prefix it with the script's name: {lifesteal.%victim's uuid%.ls.hearts}
+§6    Line: §7if {%victim's uuid%.ls.hearts} is not set:
+ §r
+[06:49:29] [Server thread/WARN]: [Skript] §6§lLine 141:§7 (lifesteal.sk)
+§e    Starting a variable's name with an expression is discouraged ({%victim's uuid%.ls.hearts}). You could prefix it with the script's name: {lifesteal.%victim's uuid%.ls.hearts}
+§6    Line: §7set {%victim's uuid%.ls.hearts} to 10
+ §r
+[06:49:29] [Server thread/WARN]: [Skript] §6§lLine 142:§7 (lifesteal.sk)
+§e    Starting a variable's name with an expression is discouraged ({%attacker's uuid%.ls.hearts}). You could prefix it with the script's name: {lifesteal.%attacker's uuid%.ls.hearts}
+§6    Line: §7if {%attacker's uuid%.ls.hearts} is not set:
+ §r
+[06:49:29] [Server thread/WARN]: [Skript] §6§lLine 143:§7 (lifesteal.sk)
+§e    Starting a variable's name with an expression is discouraged ({%attacker's uuid%.ls.hearts}). You could prefix it with the script's name: {lifesteal.%attacker's uuid%.ls.hearts}
+§6    Line: §7set {%attacker's uuid%.ls.hearts} to 10
+ §r
+[06:49:29] [Server thread/WARN]: [Skript] §6§lLine 144:§7 (lifesteal.sk)
+§e    Starting a variable's name with an expression is discouraged ({%victim's uuid%.ls.hearts}). You could prefix it with the script's name: {lifesteal.%victim's uuid%.ls.hearts}
+§6    Line: §7if {%victim's uuid%.ls.hearts} <= 0:
+ §r
+[06:49:29] [Server thread/WARN]: [Skript] §6§lLine 147:§7 (lifesteal.sk)
+§e    Starting a variable's name with an expression is discouraged ({%attacker's uuid%.ls.hearts}). You could prefix it with the script's name: {lifesteal.%attacker's uuid%.ls.hearts}
+§6    Line: §7if {%attacker's uuid%.ls.hearts} >= {ls.heartlimit}:
+ §r
+[06:49:29] [Server thread/WARN]: [Skript] §6§lLine 150:§7 (lifesteal.sk)
+§e    Starting a variable's name with an expression is discouraged ({%attacker's uuid%.ls.hearts}). You could prefix it with the script's name: {lifesteal.%attacker's uuid%.ls.hearts}
+§6    Line: §7add 1 to {%attacker's uuid%.ls.hearts}
+ §r
+[06:49:29] [Server thread/WARN]: [Skript] §6§lLine 158:§7 (lifesteal.sk)
+§e    Starting a variable's name with an expression is discouraged ({%victim's uuid%.ls.hearts}). You could prefix it with the script's name: {lifesteal.%victim's uuid%.ls.hearts}
+§6    Line: §7remove 1 from {%victim's uuid%.ls.hearts}
+ §r
+[06:49:31] [Server thread/WARN]: [Skript] §6§lLine 182:§7 (lifesteal.sk)
+§e    Starting a variable's name with an expression is discouraged ({%loop-offline player's uuid%.ls.hearts}). You could prefix it with the script's name: {lifesteal.%loop-offline player's uuid%.ls.hearts}
+§6    Line: §7if {%loop-offline player's uuid%.ls.hearts} is set:
+ §r
+[06:49:31] [Server thread/WARN]: [Skript] §6§lLine 183:§7 (lifesteal.sk)
+§e    Starting a variable's name with an expression is discouraged ({%loop-offline player's uuid%.ls.hearts}). You could prefix it with the script's name: {lifesteal.%loop-offline player's uuid%.ls.hearts}
+§6    Line: §7delete {%loop-offline player's uuid%.ls.hearts}
+ §r
+[06:49:31] [Server thread/WARN]: [Skript] §6§lLine 185:§7 (lifesteal.sk)
+§e    Starting a variable's name with an expression is discouraged ({%loop-offline player's uuid%.ls.spec}). You could prefix it with the script's name: {lifesteal.%loop-offline player's uuid%.ls.spec}
+§6    Line: §7if {%loop-offline player's uuid%.ls.spec} is set:
+ §r
+[06:49:31] [Server thread/WARN]: [Skript] §6§lLine 187:§7 (lifesteal.sk)
+§e    Starting a variable's name with an expression is discouraged ({%loop-offline player's uuid%.ls.spec}). You could prefix it with the script's name: {lifesteal.%loop-offline player's uuid%.ls.spec}
+§6    Line: §7delete {%loop-offline player's uuid%.ls.spec}
+ §r
+[06:49:31] [Server thread/WARN]: [Skript] §6§lLine 191:§7 (lifesteal.sk)
+§e    Starting a variable's name with an expression is discouraged ({%loop-offline player's uuid%.ls.reviveawait}). You could prefix it with the script's name: {lifesteal.%loop-offline player's uuid%.ls.reviveawait}
+§6    Line: §7set {%loop-offline player's uuid%.ls.reviveawait} to true
+ §r
+[06:49:33] [Server thread/WARN]: [Skript] §6§lLine 285:§7 (lifesteal.sk)
+§e    Starting a variable's name with an expression is discouraged ({%{_p}'s uuid%.ls.selrec}). You could prefix it with the script's name: {lifesteal.%{_p}'s uuid%.ls.selrec}
+§6    Line: §7set {%{_p}'s uuid%.ls.selrec} to {_s}
+ §r
+[06:49:36] [Server thread/WARN]: [Skript] §6§lLine 293:§7 (lifesteal.sk)
+§e    Starting a variable's name with an expression is discouraged ({%player's uuid%.ls.selrec}). You could prefix it with the script's name: {lifesteal.%player's uuid%.ls.selrec}
+§6    Line: §7if {%player's uuid%.ls.selrec} is set:
+ §r
+[06:49:36] [Server thread/WARN]: [Skript] §6§lLine 299:§7 (lifesteal.sk)
+§e    Starting a variable's name with an expression is discouraged ({%player's uuid%.ls.selrec}). You could prefix it with the script's name: {lifesteal.%player's uuid%.ls.selrec}
+§6    Line: §7if {%player's uuid%.ls.selrec} is 1:
+ §r
+[06:49:36] [Server thread/WARN]: [Skript] §6§lLine 302:§7 (lifesteal.sk)
+§e    Starting a variable's name with an expression is discouraged ({%player's uuid%.ls.selrec}). You could prefix it with the script's name: {lifesteal.%player's uuid%.ls.selrec}
+§6    Line: §7if {%player's uuid%.ls.selrec} is 2:
+ §r
+[06:49:36] [Server thread/WARN]: [Skript] §6§lLine 305:§7 (lifesteal.sk)
+§e    Starting a variable's name with an expression is discouraged ({%player's uuid%.ls.selrec}). You could prefix it with the script's name: {lifesteal.%player's uuid%.ls.selrec}
+§6    Line: §7if {%player's uuid%.ls.selrec} is 3:
+ §r
+[06:49:36] [Server thread/WARN]: [Skript] §6§lLine 308:§7 (lifesteal.sk)
+§e    Starting a variable's name with an expression is discouraged ({%player's uuid%.ls.selrec}). You could prefix it with the script's name: {lifesteal.%player's uuid%.ls.selrec}
+§6    Line: §7if {%player's uuid%.ls.selrec} is 4:
+ §r
+[06:49:36] [Server thread/WARN]: [Skript] §6§lLine 311:§7 (lifesteal.sk)
+§e    Starting a variable's name with an expression is discouraged ({%player's uuid%.ls.selrec}). You could prefix it with the script's name: {lifesteal.%player's uuid%.ls.selrec}
+§6    Line: §7if {%player's uuid%.ls.selrec} is 5:
+ §r
+[06:49:36] [Server thread/WARN]: [Skript] §6§lLine 314:§7 (lifesteal.sk)
+§e    Starting a variable's name with an expression is discouraged ({%player's uuid%.ls.selrec}). You could prefix it with the script's name: {lifesteal.%player's uuid%.ls.selrec}
+§6    Line: §7if {%player's uuid%.ls.selrec} is 6:
+ §r
+[06:49:36] [Server thread/WARN]: [Skript] §6§lLine 317:§7 (lifesteal.sk)
+§e    Starting a variable's name with an expression is discouraged ({%player's uuid%.ls.selrec}). You could prefix it with the script's name: {lifesteal.%player's uuid%.ls.selrec}
+§6    Line: §7if {%player's uuid%.ls.selrec} is 7:
+ §r
+[06:49:36] [Server thread/WARN]: [Skript] §6§lLine 320:§7 (lifesteal.sk)
+§e    Starting a variable's name with an expression is discouraged ({%player's uuid%.ls.selrec}). You could prefix it with the script's name: {lifesteal.%player's uuid%.ls.selrec}
+§6    Line: §7if {%player's uuid%.ls.selrec} is 8:
+ §r
+[06:49:36] [Server thread/WARN]: [Skript] §6§lLine 323:§7 (lifesteal.sk)
+§e    Starting a variable's name with an expression is discouraged ({%player's uuid%.ls.selrec}). You could prefix it with the script's name: {lifesteal.%player's uuid%.ls.selrec}
+§6    Line: §7if {%player's uuid%.ls.selrec} is 9:
+ §r
+[06:49:36] [Server thread/WARN]: [Skript] §6§lLine 327:§7 (lifesteal.sk)
+§e    Starting a variable's name with an expression is discouraged ({%player's uuid%.ls.selrec}). You could prefix it with the script's name: {lifesteal.%player's uuid%.ls.selrec}
+§6    Line: §7if {%player's uuid%.ls.selrec} is 1:
+ §r
+[06:49:36] [Server thread/WARN]: [Skript] §6§lLine 329:§7 (lifesteal.sk)
+§e    Starting a variable's name with an expression is discouraged ({%player's uuid%.ls.selrec}). You could prefix it with the script's name: {lifesteal.%player's uuid%.ls.selrec}
+§6    Line: §7if {%player's uuid%.ls.selrec} is 2:
+ §r
+[06:49:36] [Server thread/WARN]: [Skript] §6§lLine 331:§7 (lifesteal.sk)
+§e    Starting a variable's name with an expression is discouraged ({%player's uuid%.ls.selrec}). You could prefix it with the script's name: {lifesteal.%player's uuid%.ls.selrec}
+§6    Line: §7if {%player's uuid%.ls.selrec} is 3:
+ §r
+[06:49:36] [Server thread/WARN]: [Skript] §6§lLine 333:§7 (lifesteal.sk)
+§e    Starting a variable's name with an expression is discouraged ({%player's uuid%.ls.selrec}). You could prefix it with the script's name: {lifesteal.%player's uuid%.ls.selrec}
+§6    Line: §7if {%player's uuid%.ls.selrec} is 4:
+ §r
+[06:49:36] [Server thread/WARN]: [Skript] §6§lLine 335:§7 (lifesteal.sk)
+§e    Starting a variable's name with an expression is discouraged ({%player's uuid%.ls.selrec}). You could prefix it with the script's name: {lifesteal.%player's uuid%.ls.selrec}
+§6    Line: §7if {%player's uuid%.ls.selrec} is 5:
+ §r
+[06:49:36] [Server thread/WARN]: [Skript] §6§lLine 337:§7 (lifesteal.sk)
+§e    Starting a variable's name with an expression is discouraged ({%player's uuid%.ls.selrec}). You could prefix it with the script's name: {lifesteal.%player's uuid%.ls.selrec}
+§6    Line: §7if {%player's uuid%.ls.selrec} is 6:
+ §r
+[06:49:36] [Server thread/WARN]: [Skript] §6§lLine 339:§7 (lifesteal.sk)
+§e    Starting a variable's name with an expression is discouraged ({%player's uuid%.ls.selrec}). You could prefix it with the script's name: {lifesteal.%player's uuid%.ls.selrec}
+§6    Line: §7if {%player's uuid%.ls.selrec} is 7:
+ §r
+[06:49:36] [Server thread/WARN]: [Skript] §6§lLine 341:§7 (lifesteal.sk)
+§e    Starting a variable's name with an expression is discouraged ({%player's uuid%.ls.selrec}). You could prefix it with the script's name: {lifesteal.%player's uuid%.ls.selrec}
+§6    Line: §7if {%player's uuid%.ls.selrec} is 8:
+ §r
+[06:49:36] [Server thread/WARN]: [Skript] §6§lLine 343:§7 (lifesteal.sk)
+§e    Starting a variable's name with an expression is discouraged ({%player's uuid%.ls.selrec}). You could prefix it with the script's name: {lifesteal.%player's uuid%.ls.selrec}
+§6    Line: §7if {%player's uuid%.ls.selrec} is 9:
+ §r
+[06:49:36] [Server thread/WARN]: [Skript] §6§lLine 345:§7 (lifesteal.sk)
+§e    Starting a variable's name with an expression is discouraged ({%player's uuid%.ls.selrec}). You could prefix it with the script's name: {lifesteal.%player's uuid%.ls.selrec}
+§6    Line: §7message "&8[&cLife&4Steal&8] &fSuccessfully set &cslot &4%{%player's uuid%.ls.selrec}%&f of the heart recipe to &c%player's held item%&f!"
+ §r
+[06:49:36] [Server thread/WARN]: [Skript] §6§lLine 346:§7 (lifesteal.sk)
+§e    Starting a variable's name with an expression is discouraged ({%player's uuid%.ls.selrec}). You could prefix it with the script's name: {lifesteal.%player's uuid%.ls.selrec}
+§6    Line: §7delete {%player's uuid%.ls.selrec}
+ §r
+[06:49:36] [Server thread/WARN]: [Skript] §6§lLine 352:§7 (lifesteal.sk)
+§e    Starting a variable's name with an expression is discouraged ({%player's uuid%.ls.selrec}). You could prefix it with the script's name: {lifesteal.%player's uuid%.ls.selrec}
+§6    Line: §7delete {%player's uuid%.ls.selrec}
+ §r
+[06:49:36] [Server thread/WARN]: [Skript] §6§lLine 357:§7 (lifesteal.sk)
+§e    Starting a variable's name with an expression is discouraged ({%player's uuid%.ls.selrec}). You could prefix it with the script's name: {lifesteal.%player's uuid%.ls.selrec}
+§6    Line: §7if {%player's uuid%.ls.selrec} is 1:
+ §r
+[06:49:36] [Server thread/WARN]: [Skript] §6§lLine 360:§7 (lifesteal.sk)
+§e    Starting a variable's name with an expression is discouraged ({%player's uuid%.ls.selrec}). You could prefix it with the script's name: {lifesteal.%player's uuid%.ls.selrec}
+§6    Line: §7if {%player's uuid%.ls.selrec} is 2:
+ §r
+[06:49:36] [Server thread/WARN]: [Skript] §6§lLine 363:§7 (lifesteal.sk)
+§e    Starting a variable's name with an expression is discouraged ({%player's uuid%.ls.selrec}). You could prefix it with the script's name: {lifesteal.%player's uuid%.ls.selrec}
+§6    Line: §7if {%player's uuid%.ls.selrec} is 3:
+ §r
+[06:49:36] [Server thread/WARN]: [Skript] §6§lLine 366:§7 (lifesteal.sk)
+§e    Starting a variable's name with an expression is discouraged ({%player's uuid%.ls.selrec}). You could prefix it with the script's name: {lifesteal.%player's uuid%.ls.selrec}
+§6    Line: §7if {%player's uuid%.ls.selrec} is 4:
+ §r
+[06:49:36] [Server thread/WARN]: [Skript] §6§lLine 369:§7 (lifesteal.sk)
+§e    Starting a variable's name with an expression is discouraged ({%player's uuid%.ls.selrec}). You could prefix it with the script's name: {lifesteal.%player's uuid%.ls.selrec}
+§6    Line: §7if {%player's uuid%.ls.selrec} is 5:
+ §r
+[06:49:36] [Server thread/WARN]: [Skript] §6§lLine 372:§7 (lifesteal.sk)
+§e    Starting a variable's name with an expression is discouraged ({%player's uuid%.ls.selrec}). You could prefix it with the script's name: {lifesteal.%player's uuid%.ls.selrec}
+§6    Line: §7if {%player's uuid%.ls.selrec} is 6:
+ §r
+[06:49:36] [Server thread/WARN]: [Skript] §6§lLine 375:§7 (lifesteal.sk)
+§e    Starting a variable's name with an expression is discouraged ({%player's uuid%.ls.selrec}). You could prefix it with the script's name: {lifesteal.%player's uuid%.ls.selrec}
+§6    Line: §7if {%player's uuid%.ls.selrec} is 7:
+ §r
+[06:49:36] [Server thread/WARN]: [Skript] §6§lLine 378:§7 (lifesteal.sk)
+§e    Starting a variable's name with an expression is discouraged ({%player's uuid%.ls.selrec}). You could prefix it with the script's name: {lifesteal.%player's uuid%.ls.selrec}
+§6    Line: §7if {%player's uuid%.ls.selrec} is 8:
+ §r
+[06:49:36] [Server thread/WARN]: [Skript] §6§lLine 381:§7 (lifesteal.sk)
+§e    Starting a variable's name with an expression is discouraged ({%player's uuid%.ls.selrec}). You could prefix it with the script's name: {lifesteal.%player's uuid%.ls.selrec}
+§6    Line: §7if {%player's uuid%.ls.selrec} is 9:
+ §r
+[06:49:36] [Server thread/WARN]: [Skript] §6§lLine 385:§7 (lifesteal.sk)
+§e    Starting a variable's name with an expression is discouraged ({%player's uuid%.ls.selrec}). You could prefix it with the script's name: {lifesteal.%player's uuid%.ls.selrec}
+§6    Line: §7if {%player's uuid%.ls.selrec} is 1:
+ §r
+[06:49:36] [Server thread/WARN]: [Skript] §6§lLine 387:§7 (lifesteal.sk)
+§e    Starting a variable's name with an expression is discouraged ({%player's uuid%.ls.selrec}). You could prefix it with the script's name: {lifesteal.%player's uuid%.ls.selrec}
+§6    Line: §7if {%player's uuid%.ls.selrec} is 2:
+ §r
+[06:49:36] [Server thread/WARN]: [Skript] §6§lLine 389:§7 (lifesteal.sk)
+§e    Starting a variable's name with an expression is discouraged ({%player's uuid%.ls.selrec}). You could prefix it with the script's name: {lifesteal.%player's uuid%.ls.selrec}
+§6    Line: §7if {%player's uuid%.ls.selrec} is 3:
+ §r
+[06:49:36] [Server thread/WARN]: [Skript] §6§lLine 391:§7 (lifesteal.sk)
+§e    Starting a variable's name with an expression is discouraged ({%player's uuid%.ls.selrec}). You could prefix it with the script's name: {lifesteal.%player's uuid%.ls.selrec}
+§6    Line: §7if {%player's uuid%.ls.selrec} is 4:
+ §r
+[06:49:36] [Server thread/WARN]: [Skript] §6§lLine 393:§7 (lifesteal.sk)
+§e    Starting a variable's name with an expression is discouraged ({%player's uuid%.ls.selrec}). You could prefix it with the script's name: {lifesteal.%player's uuid%.ls.selrec}
+§6    Line: §7if {%player's uuid%.ls.selrec} is 5:
+ §r
+[06:49:36] [Server thread/WARN]: [Skript] §6§lLine 395:§7 (lifesteal.sk)
+§e    Starting a variable's name with an expression is discouraged ({%player's uuid%.ls.selrec}). You could prefix it with the script's name: {lifesteal.%player's uuid%.ls.selrec}
+§6    Line: §7if {%player's uuid%.ls.selrec} is 6:
+ §r
+[06:49:36] [Server thread/WARN]: [Skript] §6§lLine 397:§7 (lifesteal.sk)
+§e    Starting a variable's name with an expression is discouraged ({%player's uuid%.ls.selrec}). You could prefix it with the script's name: {lifesteal.%player's uuid%.ls.selrec}
+§6    Line: §7if {%player's uuid%.ls.selrec} is 7:
+ §r
+[06:49:36] [Server thread/WARN]: [Skript] §6§lLine 399:§7 (lifesteal.sk)
+§e    Starting a variable's name with an expression is discouraged ({%player's uuid%.ls.selrec}). You could prefix it with the script's name: {lifesteal.%player's uuid%.ls.selrec}
+§6    Line: §7if {%player's uuid%.ls.selrec} is 8:
+ §r
+[06:49:36] [Server thread/WARN]: [Skript] §6§lLine 401:§7 (lifesteal.sk)
+§e    Starting a variable's name with an expression is discouraged ({%player's uuid%.ls.selrec}). You could prefix it with the script's name: {lifesteal.%player's uuid%.ls.selrec}
+§6    Line: §7if {%player's uuid%.ls.selrec} is 9:
+ §r
+[06:49:36] [Server thread/WARN]: [Skript] §6§lLine 404:§7 (lifesteal.sk)
+§e    Starting a variable's name with an expression is discouraged ({%player's uuid%.ls.selrec}). You could prefix it with the script's name: {lifesteal.%player's uuid%.ls.selrec}
+§6    Line: §7message "&8[&cLife&4Steal&8] &fSuccessfully set &cslot &4%{%player's uuid%.ls.selrec}%&f of the heart recipe to &c%message%&f!"
+ §r
+[06:49:36] [Server thread/WARN]: [Skript] §6§lLine 406:§7 (lifesteal.sk)
+§e    Starting a variable's name with an expression is discouraged ({%player's uuid%.ls.selrec}). You could prefix it with the script's name: {lifesteal.%player's uuid%.ls.selrec}
+§6    Line: §7delete {%player's uuid%.ls.selrec}
+ §r
+[06:50:13] [Server thread/WARN]: [Skript] §6§lLine 563:§7 (lifesteal.sk)
+§e    Starting a variable's name with an expression is discouraged ({%arg-1's uuid%.ls.hearts}). You could prefix it with the script's name: {lifesteal.%arg-1's uuid%.ls.hearts}
+§6    Line: §7set {%arg-1's uuid%.ls.hearts} to arg-2 parsed as number
+ §r
+[06:50:13] [Server thread/WARN]: [Skript] §6§lLine 566:§7 (lifesteal.sk)
+§e    Starting a variable's name with an expression is discouraged ({%arg-1's uuid%.ls.hearts}). You could prefix it with the script's name: {lifesteal.%arg-1's uuid%.ls.hearts}
+§6    Line: §7message "&8[&cLife&4Steal&8] &fYour hearts were set to &c%{%arg-1's uuid%.ls.hearts}%&f!" to arg-1
+ §r
+[06:50:14] [Server thread/WARN]: [Skript] §6§lLine 572:§7 (lifesteal.sk)
+§e    Starting a variable's name with an expression is discouraged ({%player's uuid%.ls.hearts}). You could prefix it with the script's name: {lifesteal.%player's uuid%.ls.hearts}
+§6    Line: §7if {%player's uuid%.ls.hearts} is set:
+ §r
+[06:50:14] [Server thread/WARN]: [Skript] §6§lLine 574:§7 (lifesteal.sk)
+§e    Starting a variable's name with an expression is discouraged ({%player's uuid%.ls.hearts}). You could prefix it with the script's name: {lifesteal.%player's uuid%.ls.hearts}
+§6    Line: §7if {%player's uuid%.ls.hearts} is not player's max health:
+ §r
+[06:50:14] [Server thread/WARN]: [Skript] §6§lLine 575:§7 (lifesteal.sk)
+§e    Starting a variable's name with an expression is discouraged ({%player's uuid%.ls.hearts}). You could prefix it with the script's name: {lifesteal.%player's uuid%.ls.hearts}
+§6    Line: §7if {%player's uuid%.ls.hearts} is 0:
+ §r
+[06:50:14] [Server thread/WARN]: [Skript] §6§lLine 577:§7 (lifesteal.sk)
+§e    Starting a variable's name with an expression is discouraged ({%player's uuid%.ls.hearts}). You could prefix it with the script's name: {lifesteal.%player's uuid%.ls.hearts}
+§6    Line: §7set player's max health to {%player's uuid%.ls.hearts}
+ §r
+[06:50:14] [Server thread/WARN]: [Skript] §6§lLine 578:§7 (lifesteal.sk)
+§e    Starting a variable's name with an expression is discouraged ({%player's uuid%.ls.hearts}). You could prefix it with the script's name: {lifesteal.%player's uuid%.ls.hearts}
+§6    Line: §7message "&6［飛翔小助手］&b你的生命已被更改。（%{%player's uuid%.ls.hearts}%❤）"
+ §r
+[06:50:14] [Server thread/WARN]: [Skript] §6§lLine 579:§7 (lifesteal.sk)
+§e    Starting a variable's name with an expression is discouraged ({%player's uuid%.ls.spec}). You could prefix it with the script's name: {lifesteal.%player's uuid%.ls.spec}
+§6    Line: §7if {%player's uuid%.ls.spec} is set:
+ §r
+[06:50:14] [Server thread/WARN]: [Skript] §6§lLine 583:§7 (lifesteal.sk)
+§e    Starting a variable's name with an expression is discouraged ({%player's uuid%.ls.reviveawait}). You could prefix it with the script's name: {lifesteal.%player's uuid%.ls.reviveawait}
+§6    Line: §7if {%player's uuid%.ls.reviveawait} is set:
+ §r
+[06:50:14] [Server thread/WARN]: [Skript] §6§lLine 585:§7 (lifesteal.sk)
+§e    Starting a variable's name with an expression is discouraged ({%player's uuid%.ls.reviveawait}). You could prefix it with the script's name: {lifesteal.%player's uuid%.ls.reviveawait}
+§6    Line: §7delete {%player's uuid%.ls.reviveawait}
+ §r
+[06:50:15] [Server thread/WARN]: [Skript] §6§lLine 598:§7 (lifesteal.sk)
+§e    Starting a variable's name with an expression is discouraged ({%player's uuid%.ls.hearts}). You could prefix it with the script's name: {lifesteal.%player's uuid%.ls.hearts}
+§6    Line: §7if {%player's uuid%.ls.hearts} is 0:
+ §r
+[06:50:15] [Server thread/WARN]: [Skript] §6§lLine 601:§7 (lifesteal.sk)
+§e    Starting a variable's name with an expression is discouraged ({%player's uuid%.ls.hearts}). You could prefix it with the script's name: {lifesteal.%player's uuid%.ls.hearts}
+§6    Line: §7if {%player's uuid%.ls.hearts} is not set:
+ §r
+[06:50:15] [Server thread/WARN]: [Skript] §6§lLine 602:§7 (lifesteal.sk)
+§e    Starting a variable's name with an expression is discouraged ({%player's uuid%.ls.hearts}). You could prefix it with the script's name: {lifesteal.%player's uuid%.ls.hearts}
+§6    Line: §7set {%player's uuid%.ls.hearts} to 10
+ §r
+[06:50:15] [Server thread/WARN]: [Skript] §6§lLine 603:§7 (lifesteal.sk)
+§e    Starting a variable's name with an expression is discouraged ({%player's uuid%.ls.hearts}). You could prefix it with the script's name: {lifesteal.%player's uuid%.ls.hearts}
+§6    Line: §7set {%player's uuid%.ls.hearts} to {%player's uuid%.ls.hearts} - 1
+ §r
+[06:50:15] [Server thread/WARN]: [Skript] §6§lLine 603:§7 (lifesteal.sk)
+§e    Starting a variable's name with an expression is discouraged ({%player's uuid%.ls.hearts}). You could prefix it with the script's name: {lifesteal.%player's uuid%.ls.hearts}
+§6    Line: §7set {%player's uuid%.ls.hearts} to {%player's uuid%.ls.hearts} - 1
+ §r
+[06:50:15] [Server thread/WARN]: [Skript] §6§lLine 620:§7 (lifesteal.sk)
+§e    Starting a variable's name with an expression is discouraged ({%player's uuid%.ls.hearts}). You could prefix it with the script's name: {lifesteal.%player's uuid%.ls.hearts}
+§6    Line: §7if {%player's uuid%.ls.hearts} is 0:
+ §r
+[06:50:15] [Server thread/WARN]: [Skript] §6§lLine 623:§7 (lifesteal.sk)
+§e    Starting a variable's name with an expression is discouraged ({%player's uuid%.ls.hearts}). You could prefix it with the script's name: {lifesteal.%player's uuid%.ls.hearts}
+§6    Line: §7if arg-1 parsed as number > {%player's uuid%.ls.hearts}:
+ §r
+[06:50:15] [Server thread/WARN]: [Skript] §6§lLine 627:§7 (lifesteal.sk)
+§e    Starting a variable's name with an expression is discouraged ({%player's uuid%.ls.hearts}). You could prefix it with the script's name: {lifesteal.%player's uuid%.ls.hearts}
+§6    Line: §7if {%player's uuid%.ls.hearts} is not set:
+ §r
+[06:50:15] [Server thread/WARN]: [Skript] §6§lLine 628:§7 (lifesteal.sk)
+§e    Starting a variable's name with an expression is discouraged ({%player's uuid%.ls.hearts}). You could prefix it with the script's name: {lifesteal.%player's uuid%.ls.hearts}
+§6    Line: §7set {%player's uuid%.ls.hearts} to 10
+ §r
+[06:50:15] [Server thread/WARN]: [Skript] §6§lLine 632:§7 (lifesteal.sk)
+§e    Starting a variable's name with an expression is discouraged ({%player's uuid%.ls.hearts}). You could prefix it with the script's name: {lifesteal.%player's uuid%.ls.hearts}
+§6    Line: §7set {%player's uuid%.ls.hearts} to {%player's uuid%.ls.hearts} - 1
+ §r
+[06:50:15] [Server thread/WARN]: [Skript] §6§lLine 632:§7 (lifesteal.sk)
+§e    Starting a variable's name with an expression is discouraged ({%player's uuid%.ls.hearts}). You could prefix it with the script's name: {lifesteal.%player's uuid%.ls.hearts}
+§6    Line: §7set {%player's uuid%.ls.hearts} to {%player's uuid%.ls.hearts} - 1
+ §r
+[06:50:15] [Server thread/WARN]: [Skript] §6§lLine 645:§7 (lifesteal.sk)
+§e    Starting a variable's name with an expression is discouraged ({%arg-1's uuid%.ls.hearts}). You could prefix it with the script's name: {lifesteal.%arg-1's uuid%.ls.hearts}
+§6    Line: §7set {_ls.temp} to {%arg-1's uuid%.ls.hearts} * 2
+ §r
+[06:50:15] [Server thread/WARN]: [Skript] §6§lLine 646:§7 (lifesteal.sk)
+§e    Starting a variable's name with an expression is discouraged ({%arg-1's uuid%.ls.hearts}). You could prefix it with the script's name: {lifesteal.%arg-1's uuid%.ls.hearts}
+§6    Line: §7if {%arg-1's uuid%.ls.hearts} is 0:
+ §r
+[06:50:15] [Server thread/WARN]: [Skript] §6§lLine 648:§7 (lifesteal.sk)
+§e    Starting a variable's name with an expression is discouraged ({%arg-1's uuid%.ls.hearts}). You could prefix it with the script's name: {lifesteal.%arg-1's uuid%.ls.hearts}
+§6    Line: §7message "&8[&cLife&4Steal&8]&c %arg-1%&f has &c%{%arg-1's uuid%.ls.hearts}% &4Hearts&f or &c%{_ls.temp}% &4HP&f."
+ §r
+[06:50:16] [Server thread/WARN]: [Skript] §6§lLine 677:§7 (lifesteal.sk)
+§e    Starting a variable's name with an expression is discouraged ({%{_p}'s uuid%.ls.selmax}). You could prefix it with the script's name: {lifesteal.%{_p}'s uuid%.ls.selmax}
+§6    Line: §7set {%{_p}'s uuid%.ls.selmax} to true
+ §r
+[06:50:16] [Server thread/WARN]: [Skript] §6§lLine 682:§7 (lifesteal.sk)
+§e    Starting a variable's name with an expression is discouraged ({%player's uuid%.ls.selmax}). You could prefix it with the script's name: {lifesteal.%player's uuid%.ls.selmax}
+§6    Line: §7if {%player's uuid%.ls.selmax} is set:
+ §r
+[06:50:16] [Server thread/WARN]: [Skript] §6§lLine 687:§7 (lifesteal.sk)
+§e    Starting a variable's name with an expression is discouraged ({%player's uuid%.ls.selmax}). You could prefix it with the script's name: {lifesteal.%player's uuid%.ls.selmax}
+§6    Line: §7delete {%player's uuid%.ls.selmax}
+ §r
+[06:50:16] [Server thread/WARN]: [Skript] §6§lLine 692:§7 (lifesteal.sk)
+§e    Starting a variable's name with an expression is discouraged ({%player's uuid%.ls.selmax}). You could prefix it with the script's name: {lifesteal.%player's uuid%.ls.selmax}
+§6    Line: §7delete {%player's uuid%.ls.selmax}
+ §r
+[06:50:16] [Server thread/WARN]: [Skript] §6§lLine 697:§7 (lifesteal.sk)
+§e    Starting a variable's name with an expression is discouraged ({%player's uuid%.ls.selmax}). You could prefix it with the script's name: {lifesteal.%player's uuid%.ls.selmax}
+§6    Line: §7delete {%player's uuid%.ls.selmax}
+ §r
+[06:50:16] [Server thread/WARN]: [Skript] §6§lLine 704:§7 (lifesteal.sk)
+§e    Starting a variable's name with an expression is discouraged ({%{_p}'s uuid%.ls.selcmd}). You could prefix it with the script's name: {lifesteal.%{_p}'s uuid%.ls.selcmd}
+§6    Line: §7set {%{_p}'s uuid%.ls.selcmd} to true
+ §r
+[06:50:16] [Server thread/WARN]: [Skript] §6§lLine 711:§7 (lifesteal.sk)
+§e    Starting a variable's name with an expression is discouraged ({%player's uuid%.ls.selcmd}). You could prefix it with the script's name: {lifesteal.%player's uuid%.ls.selcmd}
+§6    Line: §7if {%player's uuid%.ls.selcmd} is set:
+ §r
+[06:50:16] [Server thread/WARN]: [Skript] §6§lLine 712:§7 (lifesteal.sk)
+§e    Starting a variable's name with an expression is discouraged ({%player's uuid%.ls.selcmd}). You could prefix it with the script's name: {lifesteal.%player's uuid%.ls.selcmd}
+§6    Line: §7delete {%player's uuid%.ls.selcmd}
+ §r
+[06:50:16] [Server thread/WARN]: [Skript] §6§lLine 745:§7 (lifesteal.sk)
+§e    Starting a variable's name with an expression is discouraged ({%victim's uuid%.ls.spec}). You could prefix it with the script's name: {lifesteal.%victim's uuid%.ls.spec}
+§6    Line: §7if {%victim's uuid%.ls.spec} is not set:
+ §r
+[06:50:16] [Server thread/WARN]: [Skript] §6§lLine 746:§7 (lifesteal.sk)
+§e    Starting a variable's name with an expression is discouraged ({%victim's uuid%.ls.spec}). You could prefix it with the script's name: {lifesteal.%victim's uuid%.ls.spec}
+§6    Line: §7set {%victim's uuid%.ls.spec} to true
+ §r
+[06:50:16] [Server thread/WARN]: [Skript] §6§lLine 754:§7 (lifesteal.sk)
+§e    Starting a variable's name with an expression is discouraged ({%victim's uuid%.ls.spec}). You could prefix it with the script's name: {lifesteal.%victim's uuid%.ls.spec}
+§6    Line: §7set {%victim's uuid%.ls.spec} to true
+ §r
+[06:50:17] [Server thread/WARN]: [Skript] §6§lLine 763:§7 (lifesteal.sk)
+§e    Starting a variable's name with an expression is discouraged ({%victim's uuid%.ls.hearts}). You could prefix it with the script's name: {lifesteal.%victim's uuid%.ls.hearts}
+§6    Line: §7if {%victim's uuid%.ls.hearts} is not set:
+ §r
+[06:50:17] [Server thread/WARN]: [Skript] §6§lLine 764:§7 (lifesteal.sk)
+§e    Starting a variable's name with an expression is discouraged ({%victim's uuid%.ls.hearts}). You could prefix it with the script's name: {lifesteal.%victim's uuid%.ls.hearts}
+§6    Line: §7set {%victim's uuid%.ls.hearts} to true
+ §r
+[06:50:17] [Server thread/WARN]: [Skript] §6§lLine 765:§7 (lifesteal.sk)
+§e    Starting a variable's name with an expression is discouraged ({%victim's uuid%.ls.hearts}). You could prefix it with the script's name: {lifesteal.%victim's uuid%.ls.hearts}
+§6    Line: §7if {%victim's uuid%.ls.hearts} is not 0:
+ §r
+[06:50:17] [Server thread/WARN]: [Skript] §6§lLine 767:§7 (lifesteal.sk)
+§e    Starting a variable's name with an expression is discouraged ({%victim's uuid%.ls.hearts}). You could prefix it with the script's name: {lifesteal.%victim's uuid%.ls.hearts}
+§6    Line: §7set {%victim's uuid%.ls.hearts} to {%victim's uuid%.ls.hearts} - 1
+ §r
+[06:50:17] [Server thread/WARN]: [Skript] §6§lLine 767:§7 (lifesteal.sk)
+§e    Starting a variable's name with an expression is discouraged ({%victim's uuid%.ls.hearts}). You could prefix it with the script's name: {lifesteal.%victim's uuid%.ls.hearts}
+§6    Line: §7set {%victim's uuid%.ls.hearts} to {%victim's uuid%.ls.hearts} - 1
+ §r
+[06:50:17] [Server thread/WARN]: [Skript] §6§lLine 778:§7 (lifesteal.sk)
+§e    Starting a variable's name with an expression is discouraged ({%arg-1's uuid%.ls.spec}). You could prefix it with the script's name: {lifesteal.%arg-1's uuid%.ls.spec}
+§6    Line: §7if {%arg-1's uuid%.ls.spec} is not set:
+ §r
+[06:50:17] [Server thread/WARN]: [Skript] §6§lLine 781:§7 (lifesteal.sk)
+§e    Starting a variable's name with an expression is discouraged ({%arg-1's uuid%.ls.spec}). You could prefix it with the script's name: {lifesteal.%arg-1's uuid%.ls.spec}
+§6    Line: §7delete {%arg-1's uuid%.ls.spec}
+ §r
+[06:50:17] [Server thread/WARN]: [Skript] §6§lLine 785:§7 (lifesteal.sk)
+§e    Starting a variable's name with an expression is discouraged ({%arg-1's uuid%.ls.hearts}). You could prefix it with the script's name: {lifesteal.%arg-1's uuid%.ls.hearts}
+§6    Line: §7set {%arg-1's uuid%.ls.hearts} to 10
+ §r
+[06:50:17] [Server thread/WARN]: [Skript] §6§lLine 788:§7 (lifesteal.sk)
+§e    Starting a variable's name with an expression is discouraged ({%arg-1's uuid%.ls.reviveawait}). You could prefix it with the script's name: {lifesteal.%arg-1's uuid%.ls.reviveawait}
+§6    Line: §7set {%arg-1's uuid%.ls.reviveawait} to true
+ §r
+[06:50:18] [Server thread/INFO]: [Skript] Loaded 2 scripts with a total of 35 triggers and 27 commands in 1 minute and 6.51 seconds
+[06:50:18] [Server thread/INFO]: [Skript] Finished loading.
+[06:50:18] [Server thread/INFO]: Done (262.819s)! For help, type "help"
+[06:50:18] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 67554ms or 1351 ticks behind
+[06:50:18] [Server thread/INFO]: Timings Reset
+[06:50:35] [Server thread/WARN]: UUID of added entity already exists: EntitySheep['Sheep'/22, uuid='0efa67b0-6a5e-4e95-9a56-63411a85213c', l='ServerLevel[world]', x=-150.46, y=72.00, z=-68.55, cpos=[-10, -5], tl=4520528, v=false]
+[06:50:37] [Server thread/WARN]: UUID of added entity already exists: EntityHorse['Horse'/57, uuid='8b0ef480-8002-49c2-bc32-09c0453f9dbc', l='ServerLevel[world]', x=-115.18, y=95.00, z=-70.64, cpos=[-8, -5], tl=2211347, v=false]
+[06:50:38] [Server thread/WARN]: UUID of added entity already exists: EntityEnderman['Enderman'/61, uuid='ad1ddb9c-8e46-4891-998f-4bfb01df6bd1', l='ServerLevel[world]', x=-123.68, y=62.00, z=-8.31, cpos=[-8, -1], tl=29629, v=false]
+[06:50:38] [Server thread/WARN]: UUID of added entity already exists: EntitySheep['Sheep'/78, uuid='be541a8e-8c2e-416a-9083-5b8958f311fe', l='ServerLevel[world]', x=-99.18, y=95.00, z=-55.15, cpos=[-7, -4], tl=13251165, v=false]
+[06:50:39] [Server thread/WARN]: UUID of added entity already exists: EntityPig['Pig'/91, uuid='e93cd686-cf55-4b97-ad35-3bb4cba48296', l='ServerLevel[world]', x=-82.65, y=98.00, z=-121.37, cpos=[-6, -8], tl=3111347, v=false]
+[06:50:39] [Server thread/WARN]: UUID of added entity already exists: EntitySheep['Sheep'/92, uuid='be541a8e-8c2e-416a-9083-5b8958f311fe', l='ServerLevel[world]', x=-81.89, y=96.00, z=-127.45, cpos=[-6, -8], tl=12981161, v=false]
+[06:50:39] [Server thread/WARN]: UUID of added entity already exists: EntityPig['Pig'/93, uuid='e93cd686-cf55-4b97-ad35-3bb4cba48296', l='ServerLevel[world]', x=-89.51, y=95.00, z=-95.64, cpos=[-6, -6], tl=3303349, v=false]
+[06:50:39] [Server thread/WARN]: UUID of added entity already exists: EntitySheep['Sheep'/94, uuid='be541a8e-8c2e-416a-9083-5b8958f311fe', l='ServerLevel[world]', x=-86.31, y=93.00, z=-93.98, cpos=[-6, -6], tl=13173163, v=false]
+[06:50:39] [Server thread/WARN]: UUID of added entity already exists: EntitySheep['Sheep'/96, uuid='be541a8e-8c2e-416a-9083-5b8958f311fe', l='ServerLevel[world]', x=-91.81, y=95.00, z=-54.16, cpos=[-6, -4], tl=13275165, v=false]
+[06:50:40] [Server thread/WARN]: UUID of added entity already exists: EntitySheep['Sheep'/112, uuid='be541a8e-8c2e-416a-9083-5b8958f311fe', l='ServerLevel[world]', x=-76.15, y=95.00, z=-87.85, cpos=[-5, -6], tl=13197163, v=false]
+[06:50:44] [Server thread/WARN]: UUID of added entity already exists: EntitySheep['Sheep'/207, uuid='8c6cf898-2e84-40dc-a5d7-f2a76c3f7c8e', l='ServerLevel[world]', x=74.50, y=67.00, z=14.35, cpos=[4, 0], tl=954813, v=false]
+[06:50:44] [Server thread/WARN]: UUID of added entity already exists: EntitySheep['Sheep'/214, uuid='e8fc2a05-c016-4364-a8d4-50130de86f70', l='ServerLevel[world]', x=86.66, y=57.00, z=-124.95, cpos=[5, -8], tl=3337801, v=false]
+[06:50:44] [Server thread/WARN]: UUID of added entity already exists: EntitySheep['Sheep'/216, uuid='8c6cf898-2e84-40dc-a5d7-f2a76c3f7c8e', l='ServerLevel[world]', x=86.49, y=70.00, z=-94.97, cpos=[5, -6], tl=1050807, v=false]
+[06:50:44] [Server thread/WARN]: UUID of added entity already exists: EntitySheep['Sheep'/219, uuid='8c6cf898-2e84-40dc-a5d7-f2a76c3f7c8e', l='ServerLevel[world]', x=88.21, y=69.00, z=11.21, cpos=[5, 0], tl=966813, v=false]
+[06:50:45] [Server thread/WARN]: UUID of added entity already exists: EntitySheep['Sheep'/230, uuid='8c6cf898-2e84-40dc-a5d7-f2a76c3f7c8e', l='ServerLevel[world]', x=109.93, y=70.00, z=-82.52, cpos=[6, -6], tl=1086807, v=false]
+[06:50:45] [Server thread/WARN]: UUID of added entity already exists: EntityChicken['Chicken'/232, uuid='9c779091-4a33-44f1-9b81-5e87bfb347a5', l='ServerLevel[world]', x=100.86, y=69.00, z=-79.22, cpos=[6, -5], tl=1479273, v=false]
+[06:50:48] [Server thread/WARN]: UUID of added entity already exists: EntitySheep['Sheep'/287, uuid='8c6cf898-2e84-40dc-a5d7-f2a76c3f7c8e', l='ServerLevel[world]', x=115.26, y=70.00, z=-79.51, cpos=[7, -5], tl=1089014, v=false]
+[06:50:58] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 10324ms or 206 ticks behind
+[06:55:33] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 5049ms or 100 ticks behind
+[10:10:10] [Server thread/WARN]: Can't keep up! Is the server overloaded? Running 33519ms or 670 ticks behind
+[10:10:11] [Paper Watchdog Thread/ERROR]: --- DO NOT REPORT THIS TO PAPER - THIS IS NOT A BUG OR A CRASH  - git-Paper-283 (MC: 1.18.2) ---
+[10:10:11] [Paper Watchdog Thread/ERROR]: The server has not responded for -14 seconds! Creating thread dump
+[10:10:11] [Paper Watchdog Thread/ERROR]: ------------------------------
+[10:10:11] [Paper Watchdog Thread/ERROR]: Server thread dump (Look for plugins here before reporting to Paper!):
+[10:10:11] [Paper Watchdog Thread/ERROR]: ------------------------------
+[10:10:11] [Paper Watchdog Thread/ERROR]: Current Thread: Server thread
+[10:10:11] [Paper Watchdog Thread/ERROR]: 	PID: 22 | Suspended: false | Native: false | State: RUNNABLE
+[10:10:11] [Paper Watchdog Thread/ERROR]: 	Stack:
+[10:10:11] [Paper Watchdog Thread/ERROR]: 		java.base@17.0.2/java.lang.Thread.yield(Native Method)
+[10:10:11] [Paper Watchdog Thread/ERROR]: 		net.minecraft.util.thread.BlockableEventLoop.waitForTasks(BlockableEventLoop.java:147)
+[10:10:11] [Paper Watchdog Thread/ERROR]: 		net.minecraft.util.thread.BlockableEventLoop.managedBlock(BlockableEventLoop.java:137)
+[10:10:11] [Paper Watchdog Thread/ERROR]: 		net.minecraft.server.MinecraftServer.waitUntilNextTick(MinecraftServer.java:1347)
+[10:10:11] [Paper Watchdog Thread/ERROR]: 		net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:1229)
+[10:10:11] [Paper Watchdog Thread/ERROR]: 		net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:315)
+[10:10:11] [Paper Watchdog Thread/ERROR]: 		net.minecraft.server.MinecraftServer$$Lambda$4092/0x0000000801456350.run(Unknown Source)
+[10:10:11] [Paper Watchdog Thread/ERROR]: 		java.base@17.0.2/java.lang.Thread.run(Thread.java:833)
+[10:10:11] [Paper Watchdog Thread/ERROR]: ------------------------------
+[10:10:11] [Paper Watchdog Thread/ERROR]: --- DO NOT REPORT THIS TO PAPER - THIS IS NOT A BUG OR A CRASH ---
+[10:10:11] [Paper Watchdog Thread/ERROR]: ------------------------------
+[10:59:50] [Server thread/INFO]: There are 0 of a max of 30 players online: 
+[10:59:55] [Server thread/INFO]: Stopping the server
+[10:59:55] [Server thread/INFO]: Stopping server
+[10:59:55] [Server thread/INFO]: [Geyser-Spigot] Disabling Geyser-Spigot v2.0.3-SNAPSHOT
+[10:59:55] [Server thread/INFO]: [Geyser-Spigot] Shutting down Geyser.
+[10:59:55] [Server thread/INFO]: [Geyser-Spigot] Geyser shutdown successfully.
+[10:59:55] [Server thread/INFO]: [floodgate] Disabling floodgate v2.1.0-SNAPSHOT
+[10:59:55] [Server thread/INFO]: [SkBee] Disabling SkBee v1.15.2
+[10:59:55] [Server thread/INFO]: > Successfully unloaded Core.  Goodbye!
+[10:59:55] [Server thread/INFO]: [Skript] Disabling Skript v2.6.1
+[10:59:55] [Server thread/INFO]: [AppleCoreSpigot] Disabling AppleCoreSpigot v1.2.0
+[10:59:55] [Server thread/INFO]: [CoreProtect] Disabling CoreProtect v21.2
+[10:59:55] [Server thread/INFO]: [CoreProtect] 正在完成資料記錄，請稍候……
+[10:59:55] [WebSocketConnectReadThread-261/INFO]: [Geyser-Spigot] The skin uploader has been closed
+[10:59:56] [Server thread/INFO]: [CoreProtect] 執行成功 ！ 關閉 CoreProtect v21.2 ！
+[10:59:56] [Server thread/INFO]: Saving players
+[10:59:56] [Server thread/INFO]: Saving worlds
+[10:59:57] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world]'/minecraft:overworld
+[11:00:05] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_nether]'/minecraft:the_nether
+[11:00:05] [Server thread/INFO]: Saving chunks for level 'ServerLevel[world_the_end]'/minecraft:the_end
+[11:00:05] [Server thread/INFO]: ThreadedAnvilChunkStorage (world): All chunks are saved
+[11:00:05] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM-1): All chunks are saved
+[11:00:05] [Server thread/INFO]: ThreadedAnvilChunkStorage (DIM1): All chunks are saved
+[11:00:05] [Server thread/INFO]: ThreadedAnvilChunkStorage: All dimensions are saved
+[11:00:05] [Server thread/INFO]: Flushing Chunk IO
+[11:00:05] [Server thread/INFO]: Closing Thread Pool
+[11:00:05] [Server thread/INFO]: Closing Server

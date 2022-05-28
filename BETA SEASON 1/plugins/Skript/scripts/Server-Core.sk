@@ -1,0 +1,700 @@
+
+
+
+#____________________________________________
+#╭━━━┳━━━┳━━━┳━━━╮
+#┃╭━╮┃╭━╮┃╭━╮┃╭━━╯
+#┃┃╱╰┫┃╱┃┃╰━╯┃╰━━╮
+#┃┃╱╭┫┃╱┃┃╭╮╭┫╭━━╯
+#┃╰━╯┃╰━╯┃┃┃╰┫╰━━╮  
+#╰━━━┻━━━┻╯╰━┻━━━╯   
+
+
+
+#Thank you for downloading Server-Core [Skript]!
+#𝕄𝔸𝔻𝔼 𝔹𝕐 - 𝔾ℝ𝔼𝔼ℕℂ𝕆ℕ𝕊𝕋ℝ𝕌ℂ𝕋𝕆ℝ
+#DISCORD - https://discord.gg/PwBKWknkjA - xGreeny#7388
+#ALL RIGHTS RESERVED.
+#____________________________________________
+
+
+on load:
+	message "&a> &8Successfully loaded &e&lCore..." to console
+on unload:
+	message "&c> &8Successfully unloaded &e&lCore.  Goodbye!" to console
+
+#--------------------------------------------
+#
+# 𝙈𝘼𝙄𝙉 𝘾𝙊𝙍𝙀 𝘾𝙊𝙈𝙈𝘼𝙉𝘿
+#
+#--------------------------------------------
+command /core:
+	aliases: servercore
+	trigger:
+		send "&b&m----------------------------------------------" to player
+		send "&6* &eCore &7- &cbeta-0.0.4"
+		send "&6* &dAuthor: &bGreenConstructor"
+		send "&6* &dServer Online: &b%{serveronline}%"
+		send "&b&m----------------------------------------------"
+
+on load:
+	set {serveronline} to number of players
+on join:
+	add 1 to {serveronline}
+on quit:
+	remove 1 from {serveronline}
+
+
+#--------------------------------------------
+options:
+#𝙊𝙋𝙏𝙄𝙊𝙉𝙎
+#
+#--------------------------------------------
+
+	no-perms: §b那是什麼？
+	prefix: §6［飛翔小助手］§b
+
+	BroadcastFormat: &7[&e*&7] &f #Example: &7[&e*&7] &fThis is the text
+	TpAll: &eAll players have been teleported to you. #Will be used in the future updates
+
+
+	FlightEnabled: §1開啟§b飛行能力。
+	FlightDisabled: §1關閉§b飛行能力。
+	FlyOtherOff: §1關閉§b %arg-1% 的飛行能力。
+	FlyOtherOn: §1開啟§b %arg-1% 的飛行能力。
+
+	BuildFalseOnJoin: false #if you want to turn off build mode when joining everytime, set this to true. If you want to keep build mode enabled every time you join, keep this to false.
+	MaintenanceAlertPerm: core.maintenance.alert #Players with this permission will get alerts for maintenance.
+	
+	DeathMessage: §6［飛翔小助手］§b§1%attacker%§b 擊殺了§1 %victim%。
+	JoinMessage: §6［飛翔小助手］§1%player% §b加入了伺服器。
+	QuitMessage: §6［飛翔小助手］§1%player% §b離開了伺服器。
+
+
+	Feed: &eYou have fed yourself.
+	Heal: &eYou have been healed successfully.
+	Feed2: &eYou have been fed.
+
+
+	ChangedGamemodeToSurvival: &6Your gamemode has been changed to &fSurvival
+	ChangedGamemodeToCreative: &6Your gamemode has been changed to &fCreative
+	ChangedGamemodeToAdventure: &6Your gamemode has been changed to &fAdventure
+
+	Store: https://store.test.com  #Dont remove the "https://"
+	IP: cflyskyovo.mcnw.xyz
+	Discord: https://discord.gg/test  #Dont remove the "https://"
+	Twitter: https://twitter.com/test  #Dont remove the "https://"
+
+	HubWorld: world #Put your Hub world here
+	HubLocation: -0.500, 100, 0.500 #Just an example
+	HubPitch: 0.1 #0.1 for looking in the middle, 0 wont work
+	HubYaw: 270 #Just an example
+	HubOnJoin: true #Do you want players to get teleported on join? if yes then true, if no then false.
+
+#--------------------------------------------------
+#
+#𝙈𝙊𝙏𝘿
+#
+#---------------------------------------------------
+
+
+	MOTDJoin: true #Set to false if you dont want the MOTD
+	MotdLine1: &7&m-------------------------------------------------
+	MotdLine2: &7
+	MotdLine3: &f生 命 亂 世 伺 服 器
+	MotdLine4: &7
+	MotdLine5: &7● &b&l當前分季：Beta S1
+	MotdLine6: &7● &b&lDiscord: &fhttps://discord.gg/N8wcC2JAEH
+	MotdLine7: &7
+	MotdLine8: &7&m-------------------------------------------------
+
+
+#------------------------------------------------------------------
+#
+#𝙁𝙀𝙀𝘿
+#
+#------------------------------------------------------------------
+
+command /feed [<player>]:
+	trigger:
+		if player has permission "core.feed" or "core.*":
+			if player-argument is not set:
+				set the food level of player to 10
+				send "{@prefix}{@Feed}" to player
+			else if player-argument is set:
+				if player has permission "core.feed.others":
+					if arg-1 is online:
+						set the food level of arg-1 to 10
+						send "{@prefix}{@Feed2}" to arg-1
+						send "{@prefix}&b%arg-1% &aHas been succesfully Fed." to player
+					else:
+						send "{@prefix}&c%arg-1% &cis not online!"
+				else:
+					send "{@prefix}{@no-perms}"
+		else:
+			send "{@prefix}{@no-perms}"
+
+#------------------------------------------------------------------
+#
+#𝙃𝙀𝘼𝙇
+#
+#------------------------------------------------------------------
+
+command /heal [<player>]:
+	trigger:
+		if player has permission "core.heal" or "core.*":
+			if player-argument is not set:
+				set the food level of player to 10
+				set the health of player to 20
+				send "{@prefix}{@Heal}" to player
+			else if player-argument is set:
+				if player has permission "core.heal.others" or "core.*":
+					if arg-1 is online:
+						set the food level of arg-1 to 10
+						set the health of arg-1 to 20
+						send "{@prefix}{@Heal}" to arg-1
+						send "{@prefix}&b%arg-1% &aHas been succesfully healed." to player
+					else:
+						send "{@prefix}&c%arg-1% &cis not online!"
+				else:
+					send "{@prefix}{@no-perms}"
+		else:
+			send "{@prefix}{@no-perms}"
+#----------------------------------------------
+#
+#𝘾𝙊𝙈𝙈𝘼𝙉𝘿 𝘽𝙇𝙊𝘾𝙆𝙀𝙍
+#
+#-----------------------------------------------
+
+on command:
+	if command is "pl", "plugins", "minecraft:pl" or "minecraft:plugins" or "bukkit:pl" or "bukkit:plugins":
+		if sender does not have permission "core.plugins.see" or "core.*":
+			cancel event
+			send "&fPlugins (1): &aServerCore"
+
+on command:
+	if command is "help" or "minecraft:help" or "bukkit:help":
+		if sender does not have permission "core.help.see" or "core.*":
+			cancel event
+			send ""
+			send "<tooltip:&aWe will have minigames soon.> &c* &bMinigames<reset>"
+			send "<tooltip:&aClick this to go to our store.><link:{@Store}> &c* &bStore<reset>"
+			send "<tooltip:&aClick this to go to our discord server.><link:{@Discord}> &c* &bDiscord<reset>"
+			send "<tooltip:&aClick this to go to our discord server. Support will be given to you there.><link:{@Discord}> &c* &bSupport<reset>"
+			send "<tooltip:&aClick this to go to our discord server. You can report bugs and issues there.><link:{@Discord}> &c* &bFound a Server Bug/Issue<reset>"
+
+on command:
+	if command is "bukkit:ver" or "minecraft:ver" or "bukkit:version" or "minecraft:version" or "version" or "ver":
+		if sender does not have permission "core.version.see" or "core.*":
+			cancel event
+			send "&bThis server is running S-CORE version git-servercore-156 (MC: 1.18)"
+			send "&3(Implementing API version 1.18-SNAPSHOT)"
+			send "&7&oPrevious version: git-servercore-152 (MC: 1.17.1)"
+
+
+#----------------------------------------------
+#
+#𝙎𝙏𝘼𝙁𝙁 𝘾𝙃𝘼𝙏
+#
+#-----------------------------------------------
+
+command /staffchat [<text>]:
+	aliases: /sc
+	trigger:
+		if player has permission "core.staffchat" or "core.*":
+			send "{@prefix} [&bStaffChat&f] &7- %prefix of player% %player% &8>> &e%arg-1%" to all players where [input has permission "core.staffchat.see" or "core.*"]
+			#If you want to change player's name to color of their prefix, you can set the prefix to something like this: "&8[&cAdmin&8]&c " the &c at the end sets
+			#the color of the name of the player.
+		else:
+			send "{@prefix}{@no-perms}"
+
+
+#-----------------------------------------
+#
+#𝙍𝙀𝙋𝙊𝙍𝙏 𝙎𝙔𝙎𝙏𝙀𝙈
+#
+#------------------------------------------
+
+command /report [<player>] [<text>]:
+	cooldown: 1 minute
+	cooldown message: &cPlease wait before using this command again! (%remaining time%)
+	trigger:
+		if player has permission "core.report" or "core.*":
+			if arg-1 is not set:
+				send "&c/report &c&l<player> &c&l<reason>"
+				cancel the cooldown
+			if arg-1 is set:
+				if arg 2 is set:
+					send "&cThank you for reporting &c&l%arg-1%&c."
+					send "&cReport » &a%player% &chas reported &4%arg 1% &cfor &6%arg 2%..." to all players where [input has permission "core.reports.see"]
+				else if arg-2 is not set:
+					send "&c/report <player> &c&l<reason>"
+					cancel the cooldown
+		else:
+			send "{@prefix}{@no-perms}"
+
+
+
+#-----------------------------------------
+#
+#𝙂𝘼𝙈𝙀𝙈𝙊𝘿𝙀
+#
+#------------------------------------------
+command /gm [<text>] [<player>]:
+	aliases: gamemode
+	trigger:
+		if player has permission "core.gamemode" or "core.*":
+			if arg 1 is not set:
+				send "&cUsage: /gm <mode> [player]"
+			if arg-2 is not set:
+				if arg 1 is "0" or "survival" or "s":
+					set player's gamemode to survival
+					send "{@prefix}{@ChangedGamemodeToSurvival}" to player
+				if arg 1 is "1" or "c" or "creative":
+					set player's gamemode to creative
+					send "{@prefix}{@ChangedGamemodeToCreative}" to player
+				if arg 1 is "2" or "a" or "adventure":
+					set player's gamemode to adventure
+					send "{@prefix}{@ChangedGamemodeToAdventure}" to player
+			if arg-2 is set:
+				if arg 1 is "0" or "survival" or "s":
+					set arg-2's gamemode to survival
+					send "{@prefix}{@ChangedGamemodeToSurvival}" to arg-2
+				if arg 1 is "1" or "c" or "creative":
+					set arg-2's gamemode to creative
+					send "{@prefix}{@ChangedGamemodeToCreative}" to arg-2
+				if arg 1 is "2" or "a" or "adventure":
+					set arg-2's gamemode to adventure
+					send "{@prefix}{@ChangedGamemodeToAdventure}" to arg-2
+		else:
+			send "{@prefix}{@no-perms}"
+
+#----------------------------------
+#
+#𝙈𝙀𝙎𝙎𝘼𝙂𝙄𝙉𝙂 𝙎𝙔𝙎𝙏𝙀𝙈
+#
+#-----------------------------------
+
+command /msg [<offline player>] [<text>]:
+	aliases: /w, /tell
+	trigger:
+		if player has permission "core.msg" or "core.*":
+			if arg-1 is set:
+				if arg-1 is online:
+					if arg-2 is set:
+						set {player.reply} to arg-1
+						set {player.name} to player
+						send "&dTo: &9%arg-1% &a&l» &7%arg-2%"
+						send "&dFrom: &9%{player.name}% &a&l» &7%arg-2%" to arg-1
+					else:
+						send "{@prefix}&cEnter a message"
+				else if arg-1 is offline:
+					send "{@prefix}&cPlayer is not online!"
+			else if arg-1 is not set:
+				send "{@prefix}&cSpecify player!"
+		else:
+			send "{@prefix}{@no-perms}"
+
+
+command /r [<text>]:
+	aliases: /reply
+	trigger:
+		if player has permission "core.msg" or "core.*":
+			if arg-1 is set:
+				if {player.reply} is online:
+					if {player.name} is online:
+						send "&6To: &9%{player.reply}% &a&l» &7%arg-1%"
+						send "&6From: &9%{player.name}% &a&l» &7%arg-1%" to {player.reply}
+					else:
+						send "{@prefix}&cPlayer is not online!"
+				else:
+					send "{@prefix}&cPlayer is not online!"
+			else:
+				send "{@prefix}&cEnter a message"
+		else:
+			send "{@prefix}{@no-perms}"
+
+
+#----------------------------------
+#
+#𝘽𝘼𝘾𝙆
+#
+#-----------------------------------
+on teleport:
+	set {TeleportBack::%player's uuid%} to location of the player
+
+command /back [<player>]:
+	trigger:
+		if player has permission "core.back" or "core.*":
+			if arg-1 is not set:
+				teleport the player to {TeleportBack::%player's uuid%}
+				send "{@prefix}&aTeleportation Successful."
+			else if arg-1 is set:
+				teleport arg-1 to {TeleportBack::%arg-1's uuid%}
+				send "{@prefix}&aTeleportation Successful for &6%arg-1%&a."
+				send "{@prefix}&aTeleportation Successful." to arg-1
+				send "{@prefix}&7You were teleported to your last known location by &6%player's name%&7." to arg-1
+		else:
+			send "{@prefix}{@no-perms}"
+
+
+#----------------------------------
+#
+#𝙁𝙇𝙔
+#
+#-----------------------------------
+
+command /fly [<player>]:
+	trigger:
+		if arg 1 is not set:
+			if player has permission "core.fly" or "core.*":
+				if player's flight mode is false:
+					set player's flight mode to true
+					send "{@prefix}{@FlightEnabled}" to player
+					stop
+				else:
+					set player's flight mode to false
+					send "{@prefix}{@FlightDisabled}" to player
+					stop
+			else:
+				send "{@prefix}{@no-perms}"
+		else if arg-1 is set:
+			if arg-1 is online:
+				if player has permission "core.fly.others" or "core.*":
+					if arg-1's flight mode is false:
+						set arg-1's flight mode to true
+						send "{@prefix}{@FlightEnabled}" to arg-1
+						send "{@prefix}{@FlyOtherOn}" to player
+						stop
+					else:
+						set arg-1's flight mode to false
+						send "{@prefix}{@FlightDisabled}" to arg-1
+						send "{@prefix}{@FlyOtherOff}" to player
+						stop
+				else:
+					send "{@prefix}{@no-perms}"
+			else:
+				if player has permission "core.fly.others" or "core.*":
+					send "{@prefix}&cThat player is not online!"
+				else:
+					send "{@prefix}{@no-perms}"
+
+#----------------------------------
+#
+#𝙈𝙊𝙏𝘿
+#
+#-----------------------------------
+
+
+on join:
+	if {@MOTDJoin} is true:
+		wait 4 seconds
+		send "{@MotdLine1}" to player
+		send "{@MotdLine2}" to player
+		send "{@MotdLine3}" to player
+		send "{@MotdLine4}" to player
+		send "{@MotdLine5}" to player
+		send "{@MotdLine6}" to player
+		send "{@MotdLine7}" to player
+		send "{@MotdLine8}" to player
+		send "{@MotdLine9}" to player
+	else:
+		stop
+
+#----------------------------------
+#
+#𝙄𝙉𝙑𝙎𝙀𝙀
+#
+#-----------------------------------
+
+command /invsee [<player>]:
+	aliases: inv, inventory
+	trigger:
+		if player has permission "core.invsee" or "core.*":
+			if arg-1 is not set:
+				send "&cUsage: /invsee <player>" to player
+			if arg-1 is set:
+				open the arg-1's inventory for the player
+				send "&eOpening inventory of: &b%arg 1%" to player
+			stop
+		else:
+			send "{@prefix}{@no-perms}"
+			
+
+#----------------------------------
+#
+# just a fun command xD
+#
+#-----------------------------------
+
+command /boop:
+	trigger:
+		make player say "&d&lBoop!"
+
+#----------------------------------
+#
+#𝘾𝙇𝙀𝘼𝙍𝘾𝙃𝘼𝙏
+#
+#-----------------------------------
+
+command /clearchat:
+	aliases: cc
+	trigger:
+		if sender has permission "core.clearchat" or "core.*":
+			loop 300 times:
+				broadcast " "
+			broadcast "&6&m-----------------------------------------"
+			broadcast "{@prefix} &fChat has been cleared by %player%!"
+			broadcast "&6&m-----------------------------------------"
+		else:
+			send "{@prefix}{@no-perms}"
+#----------------------------------
+#
+#𝘿𝙀𝘼𝙏𝙃 𝙈𝙀𝙎𝙎𝘼𝙂𝙀
+#
+#-----------------------------------
+
+on death of player:
+	set death message to "{@DeathMessage}"
+
+#----------------------------------
+#
+#𝙅𝙊𝙄𝙉 𝘼𝙉𝘿 𝙌𝙐𝙄𝙏 𝙈𝙀𝙎𝙎𝘼𝙂𝙀𝙎
+#
+#-----------------------------------
+
+on join:
+	set join message to "{@JoinMessage}"
+
+on quit:
+	set leave message to "{@QuitMessage}"
+
+#----------------------------------
+#
+#𝙈𝙐𝙏𝙀𝘾𝙃𝘼𝙏
+#
+#-----------------------------------
+
+command /mutechat:
+	trigger:
+		if sender has permission "core.mutechat" or "core.*":
+			if {Globalchat} is not set:
+				set {Globalchat} to "disabled"
+				broadcast "{@prefix} &7Server chat has been disabled by &c%player%"
+				stop trigger
+			if {Globalchat} is set:
+				clear {Globalchat}
+				broadcast "{@prefix} &7Server chat has been enabled by &a%player%"
+		else:
+			send "{@prefix}{@no-perms}"
+
+on chat:
+	if {Globalchat} is "disabled":
+		if player has permission "core.mutechat.bypass" or "core.*":
+			stop trigger
+		else:
+			cancel event
+			send "{@prefix}&cChat is currently muted."
+
+#----------------------------------------------
+#
+#𝙃𝙐𝘽 𝙏𝙀𝙇𝙀𝙋𝙊𝙍𝙏𝘼𝙏𝙄𝙊𝙉 𝙎𝙔𝙎𝙏𝙀𝙈
+#
+#-----------------------------------------------
+
+command /hub:
+	trigger:
+		set {_hub} to location at {@HubLocation} in world "{@HubWorld}"
+		set pitch of {_hub} to {@HubPitch}
+		set yaw of {_hub} to {@HubYaw}
+		teleport player to {_hub}
+
+
+on join:
+	if {@HubOnJoin} is true:
+		set {_hub} to location at {@HubLocation} in world "{@HubWorld}"
+		set pitch of {_hub} to {@HubPitch}
+		set yaw of {_hub} to {@HubYaw}
+		teleport player to {_hub}
+	if {@HubOnJoin} is false:
+		stop
+
+#----------------------------------------------
+#
+#𝙉𝙄𝙂𝙃𝙏 𝙑𝙄𝙎𝙄𝙊𝙉
+#
+#-----------------------------------------------
+
+command /nightvison [<player>] [<text>]:
+	aliases: /nv
+	permission: core.nightvision
+	permission message: {@prefix}{@no-perms}
+	trigger:
+		if arg 1 is set:
+			if player has permission "core.nightvision" or "core.*":
+				if "%player%" is "%arg 1%":
+					send "&8> &7Please use /nv to give Night Vision to yourself."
+				else:
+					if {nv::%uuid of arg 1%} is set:
+						delete {nv::%uuid of arg 1%}
+						send "&8> &7You disabled &f%arg 1%'s &7Night Vision."
+						send "&8> &7Your Night Vision was &cDisabled&8." to arg 1
+						remove night vision from arg 1
+					else:
+						set {nv::%uuid of arg 1%} to true
+						send "&8> &7You enabled &f%arg 1%'s &7Night Vision."
+						send "&8> &7Your Night Vision was &aEnabled&8." to arg 1
+						apply night vision to arg 1 for 999999 days
+		else:
+			if {nv::%uuid of player%} is set:
+				delete {nv::%uuid of player%}
+				send "&8> &7Your Night Vision was &cDisabled&8."
+				remove night vision from the player
+			else:
+				set {nv::%uuid of player%} to true
+				send "&8> &7Your &7Night Vision&7 was &aEnabled&8."
+				apply night vision to the player for 999999 days
+on quit:
+	if {nv::%uuid of player%} is set:
+		delete {nv::%uuid of player%}
+on world change:
+	if {nv::%uuid of player%} is set:
+		delete {nv::%uuid of player%}
+
+
+#----------------------------------------------
+#
+#𝙏𝙋-𝘼𝙇𝙇
+#
+#-----------------------------------------------
+
+command /tpall [<player=%sender%>]:
+	trigger:
+		if player has permission "core.tpall" or "core.*":
+			loop all players:
+				teleport loop-player to arg-1
+		else:
+			send "{@prefix}{@no-perms}"
+
+#----------------------------------------------
+#
+#𝙈𝘼𝙎𝙎 𝙎𝘼𝙔
+#
+#-----------------------------------------------
+
+command /massay [<text>]:
+	aliases: masssay, sayall, makeallsay
+	trigger:
+		if sender has permission "core.massay" or "core.masssay" or "core.*":
+			if arg-1 is set:
+				loop all players:
+					make loop-player say uncolored arg-1
+			else:
+				send "{@prefix}&cInput a message!"
+		else:
+			send "{@prefix}{@no-perms}"
+
+
+#----------------------------------------------
+#
+#𝙏𝙊𝙂𝙂𝙇𝙀 𝘽𝙐𝙄𝙇𝘿 𝙈𝙊𝘿𝙀
+#
+#-----------------------------------------------
+
+command /build:
+	aliases: buildmode
+	trigger:
+		if player has permission "core.build" or "core.*":
+			if {buildmode.%player's uuid%} is not set:
+				set {buildmode.%player's uuid%} to false
+				send "{@prefix} &aSet your build mode to &cfalse"
+			else if {buildmode.%player's uuid%} is true:
+				set {buildmode.%player's uuid%} to false
+				send "{@prefix} &aSet your build mode to &cfalse"
+			else if {buildmode.%player's uuid%} is false:
+				set {buildmode.%player's uuid%} to true
+				send "{@prefix} &aSet your build mode to &atrue"
+
+on break:
+	if {buildmode.%player's uuid%} is false:
+		cancel event
+		send action bar "&cBuild mode turned off, turn it on with &e/build" to player
+on place:
+	if {buildmode.%player's uuid%} is false:
+		cancel event
+		send action bar "&cBuild mode turned off, turn it on with &e/build" to player	
+
+on join:
+	if {@BuildFalseOnJoin} is true:
+		set {buildmode.%player's uuid%} to false
+
+
+#----------------------------------------------
+#
+#𝙈𝘼𝙄𝙉𝙏𝙀𝙉𝘼𝙉𝘾𝙀 𝙈𝙊𝘿𝙀
+#
+#-----------------------------------------------
+
+
+command /maintenance [<text>] [<offline player>]:
+	trigger:
+		if sender has permission "core.maintenance.toggle" or "core.*":
+			if arg-1 is not set:
+				if {maintenancemode} is not set:
+					set {maintenancemode} to true
+					send "{@prefix}&dMaintenance Mode has been toggled &aON&d."
+				else if {maintenancemode} is false:
+					set {maintenancemode} to true
+					send "{@prefix}&dMaintenance Mode has been toggled &aON&d."
+				else if {maintenancemode} is true:
+					set {maintenancemode} to false
+					send "{@prefix}&dMaintenance Mode has been toggled &cOFF&d."
+			if arg-1 is set:
+				if arg-1 is "on":
+					set {maintenancemode} to true
+					send "{@prefix}&dMaintenance Mode has been toggled &aON&d."	
+				else if arg-1 is "off":
+					set {maintenancemode} to false
+					send "{@prefix}&dMaintenance Mode has been toggled &cOFF&d."
+				else if arg-1 is "toggle":
+					if {maintenancemode} is not set:
+						set {maintenancemode} to true
+						send "{@prefix}&dMaintenance Mode has been toggled &aON&d."
+					else if {maintenancemode} is false:
+						set {maintenancemode} to true
+						send "{@prefix}&dMaintenance Mode has been toggled &aON&d."
+					else if {maintenancemode} is true:
+						set {maintenancemode} to false
+						send "{@prefix}&dMaintenance Mode has been toggled &cOFF&d."
+				else if arg-1 is "add":
+					if arg-2 is set:
+						set {maintenance.bypass.%arg-2's uuid%} to true
+						send "{@prefix}&dAdded &b%arg-2% &d to maintenance bypass list."
+					else:
+						send "{@prefix}&cInput a player name!"	
+				else if arg-1 is "remove":
+					if arg-2 is set:
+						set {maintenance.bypass.%arg-2's uuid%} to false
+						send "{@prefix}&dRemoved &b%arg-2% &d from maintenance bypass list."				
+					else:
+						send "{@prefix}&cInput a player name!"
+		else:
+			send "{@prefix}{@no-perms}"
+
+on join:
+	if {maintenancemode} is true:
+		if {maintenance.bypass.%player's uuid%} is not set:
+			set join message to ""
+			wait 7 ticks
+			kick the player due to "&cMaintenace Mode is currently enabled!"
+			send "{@prefix}&b%player% Tried to join whilst maintenance mode is toggled on." to console
+			send "{@prefix}&b%player% Tried to join whilst maintenance mode is toggled on." to all players where [input has permission "{@MaintenanceAlertPerm}"]
+		else if {maintenance.bypass.%player's uuid%} is true:
+			set join message to "{@JoinMessage}"
+			send "{@prefix}&dYou bypassed maintenance mode."
+		else if {maintenance.bypass.%player's uuid%} is false:
+			set join message to ""
+			wait 7 ticks
+			kick the player due to "&cMaintenace Mode is currently enabled!"
+			send "{@prefix}&b%player% Tried to join whilst maintenance mode is toggled on." to console
+			send "{@prefix}&b%player% Tried to join whilst maintenance mode is toggled on." to all players where [input has permission "{@MaintenanceAlertPerm}"]			

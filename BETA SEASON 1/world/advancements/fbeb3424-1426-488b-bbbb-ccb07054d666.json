@@ -1,0 +1,10 @@
+{
+  "minecraft:adventure/adventuring_time": {
+    "criteria": {
+      "minecraft:river": "2022-05-15 00:38:46 +0000",
+      "minecraft:savanna": "2022-05-15 00:38:53 +0000"
+    },
+    "done": false
+  },
+  "DataVersion": 2975
+}
